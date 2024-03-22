@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+
+</head>
+<body style="background-color: #f0f2f5;">
+    <div class="container">
+        <div class="jumbotron mt-5" style="background-color: #ffffff; text-align: center;">
+            <!-- Photo -->
+            <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Daniel Osei Agyapong" class="img-fluid rounded-circle mb-3" width="200">
+
+            <h1 class="display-4">Hello, I'm Daniel Osei Agyapong!</h1>
+            <p class="lead">A Data Science and Machine Learning enthusiast with an MS in Business Analytics, graduating in May 2024.</p>
+            <p>This website showcases the visualization of some projects I've worked on, alongside the codes where available.</p>
+            <p>Fun fact: I built this website myself using tools such as HTML, CSS, JavaScript, Flask, and Slick Slider.</p>
+
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Project 1: Music & Mental Health: The Rhythmic Impact on Well-being</h3>
+                <p>Intrigued by the harmonious relationship between music genres and mental health, my team and I embarked on an analytical journey with a Kaggle dataset originating from a University of Washington study. With self-reported mental health conditions as our notes and Tableau as our instrument, we orchestrated an in-depth analysis that resonated with intriguing findings.</p>
+
+                <p>Our symphony of data revealed a melody of impacts: some music genres serenaded the mind with positive vibes, while others struck a dissonant chord. The data sang of high notes, particularly among younger and older demographics, where the therapeutic tones of certain genres amplified their mental well-being.</p>
+
+               <p> Yet, like any complex composition, variations arose. Self-reporting biases, cultural harmonics, and the scale of our sample size added layers to our understanding. Delving deeper, we tuned into specific genres, such as the dynamic world of video game music, uncovering patterns and potential for enhancing mood and alleviating conditions when the right tunes are played early in life.</p>
+
+               <p> Discover the power of music on mental health through our visualized tableau of insights. Explore how the right playlist could be a key to harmonizing mental wellness across ages.</p>
+                <div class="project-slides">
+                    <img src="{{ url_for('static', filename='slides/slide1.jpg') }}" alt="Music & Mental Health Slide 1" class="img-fluid">
+                    <img src="{{ url_for('static', filename='slides/slide2.jpg') }}" alt="Music & Mental Health Slide 2" class="img-fluid">
+                    <img src="{{ url_for('static', filename='slides/slide3.jpg') }}" alt="Music & Mental Health Slide 3" class="img-fluid">
+                    <img src="{{ url_for('static', filename='slides/slide4.jpg') }}" alt="Music & Mental Health Slide 4" class="img-fluid">
+                    <img src="{{ url_for('static', filename='slides/slide5.jpg') }}" alt="Music & Mental Health Slide 5" class="img-fluid">
+                    <img src="{{ url_for('static', filename='slides/slide6.jpg') }}" alt="Music & Mental Health Slide 6" class="img-fluid">
+                    <img src="{{ url_for('static', filename='slides/slide7.jpg') }}" alt="Music & Mental Health Slide 7" class="img-fluid">
+                    <img src="{{ url_for('static', filename='slides/slide8.jpg') }}" alt="Music & Mental Health Slide 8" class="img-fluid">
+                    <img src="{{ url_for('static', filename='slides/slide9.jpg') }}" alt="Music & Mental Health Slide 9" class="img-fluid">
+                    <img src="{{ url_for('static', filename='slides/slide10.jpg') }}" alt="Music & Mental Health Slide 10" class="img-fluid">
+                </div>
+            </div>
+            <div class="project">
+                <h3>Project 2: Fresh 2.0: The Operational Execution Analyst</h3>
+                <p>Diving into BJ's Wholesale Club's Fresh 2.0 project was an adventure in data-driven freshness! From analyzing chilly inbound temperatures to inspecting vibrant produce and mastering the art of sturdy pallet building, my mission was clear. Armed with Excel and an insatiable curiosity, I navigated through a sea of data, turning insights into action for that perfect avocado squish. It was a journey of turning club feedback into actionable gold and ensuring every lettuce leaf arrived in tip-top shape. This wasn't just an internship; it was my front-row seat to innovation, where numbers spun tales of quality, collaboration, and crispy cucumbers. Capping off this incredible adventure, I was privileged to win the Pace Setter Award, a cherry on top of an already rewarding experience!</p>
+
+                <div class="project-slides">
+                    <img src="{{ url_for('static', filename='2/slide1.jpg') }}" alt="Fresh 2.0 Slide 1" class="img-fluid">
+                    <img src="{{ url_for('static', filename='2/slide2.jpg') }}" alt="Fresh 2.0 Slide 2" class="img-fluid">
+                    <img src="{{ url_for('static', filename='2/slide3.jpg') }}" alt="Fresh 2.0 Slide 3" class="img-fluid">
+                    <img src="{{ url_for('static', filename='2/slide4.jpg') }}" alt="Fresh 2.0 Slide 4" class="img-fluid">
+                    <img src="{{ url_for('static', filename='2/slide5.jpg') }}" alt="Fresh 2.0 Slide 5" class="img-fluid">
+                    <img src="{{ url_for('static', filename='2/slide6.jpg') }}" alt="Fresh 2.0 Slide 6" class="img-fluid">
+                    <img src="{{ url_for('static', filename='2/slide7.jpg') }}" alt="Fresh 2.0 Slide 7" class="img-fluid">
+                </div>
+            </div>
+            <div class="project">
+                <h3>Project 3: BigTelco FastCable Delivery System: Building a Database to solve problems</h3>
+                <p>On the "Big Telco Database Project," our squad turned data detective, diving into a telecom conundrum at BigTelco. Our mission? To untangle a web of service delays and installation hiccups that would make any customer's head spin. Armed with SQL wizardry and Tableau's visual prowess, we engineered a database that didn't just talk the talk but walked the walk. Picture this: from chaos to clarity, transforming a saga of missed appointments and endless phone calls into a streamlined service delight. This wasn't just a project; it was our playground, where data danced and solutions sang, making BigTelco's customer experience smoother than their 1Gbps internet service. Oh, and did we mention the fun part? Cracking the code to customer smiles was the best reward.</p>
+
+                <div class="project-slides">
+                    <img src="{{ url_for('static', filename='3/slide1.jpg') }}" alt="BigTelco Slide 1" class="img-fluid">
+                    <img src="{{ url_for('static', filename='3/slide2.jpg') }}" alt="BigTelco Slide 2" class="img-fluid">
+                    <img src="{{ url_for('static', filename='3/slide3.jpg') }}" alt="BigTelco Slide 3" class="img-fluid">
+                    <img src="{{ url_for('static', filename='3/slide4.jpg') }}" alt="BigTelco Slide 4" class="img-fluid">
+                    <img src="{{ url_for('static', filename='3/slide5.jpg') }}" alt="BigTelco Slide 5" class="img-fluid">
+                    <img src="{{ url_for('static', filename='3/slide6.jpg') }}" alt="BigTelco Slide 6" class="img-fluid">
+                    <img src="{{ url_for('static', filename='3/slide7.jpg') }}" alt="BigTelco Slide 7" class="img-fluid">
+                    <img src="{{ url_for('static', filename='3/slide8.jpg') }}" alt="BigTelco Slide 8" class="img-fluid">
+                </div>
+            </div>
+            <div class="project">
+                <h3>Project 4: Personal Consumption Expenditures Prediction: Gasoline and other Energy goods</h3>
+                <p>For our fourth project, "Exploration of Personal Consumption Expenditures in the USA - Nondurable Goods: Gasoline and Other Energy Goods," we turned financial detectives with a magnifying glass on the dance between oil prices and how much green Americans spill on energy goods. Cracking the code with Holt and ARIMA models, our data wizardry forecasted a whopping $481 billion splash in PCE by Q4 2023. It was a journey back to the future, from 1947 to 2023, proving that when oil prices sway, PCE for gasoline and energy goods grooves along. So, buckle up; our analysis signals a hefty fuel bill on the horizon, powered by the undying romance between oil prices and energy expenditures.</p>
+
+                <div class="project-slides">
+                    <img src="{{ url_for('static', filename='4/slide1.jpg') }}" alt="Personal Consumption 1" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide2.jpg') }}" alt="Personal Consumption 2" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide3.jpg') }}" alt="Personal Consumption 3" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide4.jpg') }}" alt="Personal Consumption 4" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide5.jpg') }}" alt="Personal Consumption 5" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide6.jpg') }}" alt="Personal Consumption 6" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide7.jpg') }}" alt="Personal Consumption 7" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide8.jpg') }}" alt="Personal Consumption 8" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide9.jpg') }}" alt="Personal Consumption 9" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide10.jpg') }}" alt="Personal Consumption 10" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide11.jpg') }}" alt="Personal Consumption 11" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide12.jpg') }}" alt="Personal Consumption 12" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide13.jpg') }}" alt="Personal Consumption 13" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide14.jpg') }}" alt="Personal Consumption 14" class="img-fluid">
+                    <img src="{{ url_for('static', filename='4/slide15.jpg') }}" alt="Personal Consumption 15" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Additional Sections like Resume, Contact, etc. -->
+        <div class="additional-info">
+            <a href="#">Download Resume</a> | <a href="https://blinq.me/YrJHNWePuV2aKCFRSKRR" target="_blank">Contact Me</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Slick Slider JavaScript -->
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!-- Custom Scripts -->
+    <script>
+        $(document).ready(function(){
+            // Smooth Scrolling
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            // Slick Slider Initialization
+            $('.project-slides').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
+
